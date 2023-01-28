@@ -18,7 +18,7 @@ export default {
         credits: 100_000,
         extensions: [
             {
-                caption: 'Ambulance extension',
+                caption: 'Ambulanceforlængelse',
                 credits: 100_000,
                 coins: 20,
                 duration: '7 Days',
@@ -27,28 +27,28 @@ export default {
                 isVehicleExtension: true,
             },
             {
-                caption: 'Technical Rescue',
+                caption: 'Teknisk redningsarbejde',
                 credits: 100_000,
                 coins: 20,
-                duration: '7 Days',
+                duration: '7 Dage',
                 unlocksVehicleTypes: [73, 74],
                 givesParkingLots: 0,
                 isVehicleExtension: true,
             },
             {
-                caption: 'Foam Extension',
+                caption: 'Skumforlængelse',
                 credits: 150_000,
                 coins: 15,
-                duration: '5 Days',
+                duration: '5 Dage',
                 unlocksVehicleTypes: [35, 36, 37, 38],
                 givesParkingLots: 0,
                 isVehicleExtension: true,
             },
             {
-                caption: 'Swap Body Parking Space',
+                caption: 'Parkeringsplads til byttevogn',
                 credits: 50_000,
                 coins: 20,
-                duration: '7 Days',
+                duration: '7 Dage',
                 unlocksVehicleTypes: [
                     40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
                 ],
@@ -61,10 +61,10 @@ export default {
             },
             ...multiplyExtension(
                 {
-                    caption: 'Swap Body Parking Space',
+                    caption: 'Parkeringsplads til byttevogn',
                     credits: 50_000,
                     coins: 20,
-                    duration: '7 Days',
+                    duration: '7 Dage',
                     unlocksVehicleTypes: [
                         40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
                     ],
@@ -83,7 +83,7 @@ export default {
         maxBuildings: '6.000 together with small fire stations',
         maxLevel: 24,
         special:
-            'From the 24th fire station onwards, the cost of building a new fire station increases according to the following formula: <code>100.000+200.000*LOG<sub>2</sub>(Number of existing fire stations − 22)</code>. The Coins price remains constant!',
+'Fra den 24. brandstation og fremefter stiger omkostningerne ved at bygge en ny brandstation efter følgende formel: <code>100.000+200.000*LOG<sub>2</sub>(Antal eksisterende brandstationer − 22)</ code>. Møntprisen forbliver konstant!', 
         startPersonnel: 10,
         startVehicles: ['Water Ladder', 'Light 4X4 Pump (L4P)'],
         schoolingTypes: ['Fire Station'],
@@ -111,7 +111,7 @@ export default {
         maxBuildings: 'No limit',
         maxLevel: 0,
         special:
-            "Finance Admins and admins can (expand) fire department schools with the help of credits from the association's funds. Alliance Educators and admins can start training courses at association fire- brigade schools.",
+"Økonomi Administratorer og administratorer kan (udvide) brandvæsenets skoler ved hjælp af kreditter fra foreningens midler. Undervisere og administratorer kan starte uddannelsesforløb på foreningens brandvæsenskoler."
         startClassrooms: 1,
         icon: 'graduation-cap',
     },
@@ -122,7 +122,7 @@ export default {
         credits: 200_000,
         extensions: [
             {
-                caption: 'Mass Casualty Extension',
+                caption: 'Masseskadeforlængelse',
                 credits: 150_000,
                 coins: 20,
                 duration: '5 Days',
@@ -133,23 +133,23 @@ export default {
             },
         ],
         levelcost: ['1. 10.000', '2. 50.000', '3.-19. 100.000'],
-        maxBuildings: 'No limit',
+        maxBuildings: 'Ingen begrænsning',
         maxLevel: 19,
         special: '',
         startPersonnel: 3,
         startParkingLots: 1,
         startVehicles: ['Ambulance'],
-        schoolingTypes: ['Rescue'],
+        schoolingTypes: ['Redning'],
         icon: 'house-medical',
     },
     3: {
-        caption: 'Rescue (EMS) Academy',
+        caption: 'Redningsakademi (EMS)',
         color: '#9f9830',
         coins: 50,
         credits: 500_000,
         extensions: multiplyExtension(
             {
-                caption: 'Additional classroom',
+                caption: 'Ekstra klasseværelse',
                 credits: 400_000,
                 coins: 40,
                 duration: '7 Days',
